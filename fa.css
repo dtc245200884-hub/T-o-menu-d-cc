@@ -1,0 +1,46 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    padding: 30px;
+}
+
+#menu ul {
+    list-style: none;
+}
+
+#menu li {
+    position: relative;
+    width: 160px;
+    height: 30px;
+    line-height: 30px;
+    background-color: black;
+    cursor: pointer;
+}
+
+#menu a {
+    display: block;
+    padding: 0 20px;
+    text-decoration: none;
+    color: white;
+}
+
+#menu li:hover {
+    background-color: #444;
+}
+
+#menu ul ul {
+    position: absolute;
+    top: 0;
+    left: 160px;
+    visibility: hidden;
+}
+
+#menu ul li:hover > ul {
+    visibility: visible;
+}
